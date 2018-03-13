@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

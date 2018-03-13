@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/anim-v21/design_appbar_state_list_animator.xml",
+        "source": "/Users/tranglet./.android/build-cache/3db5a91767caf6ba8cd2a21db5cef86dd1fccf89/output/res/anim-v21/design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/tranglet./.android/build-cache/3db5a91767caf6ba8cd2a21db5cef86dd1fccf89/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/tranglet./.android/build-cache/3db5a91767caf6ba8cd2a21db5cef86dd1fccf89/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    }
+]

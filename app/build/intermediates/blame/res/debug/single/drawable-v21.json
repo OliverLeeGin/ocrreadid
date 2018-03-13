@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

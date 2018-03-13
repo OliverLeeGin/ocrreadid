@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/color-v23/design_tint_password_toggle.xml",
+        "source": "/Users/tranglet./.android/build-cache/3db5a91767caf6ba8cd2a21db5cef86dd1fccf89/output/res/color-v23/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/Users/tranglet./.android/build-cache/8116b2c480750f469c5f1eeb361fd68d88bfc35f/output/res/color-v23/abc_tint_switch_thumb.xml"
+    }
+]
