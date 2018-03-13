@@ -15,6 +15,8 @@
  */
 package com.google.android.gms.samples.vision.ocrreader;
 
+import android.graphics.Rect;
+import android.util.Log;
 import android.util.SparseArray;
 
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.GraphicOverlay;
@@ -30,10 +32,18 @@ public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
     private GraphicOverlay<OcrGraphic> mGraphicOverlay;
     private static final int MAX_LENGTH = 15;
     private IOnGetResultListener mIOnGetResultListener;
+    private int mLeft;
+    private int mRight;
+    private int mTop;
+    private int mBottom;
 
-    OcrDetectorProcessor(GraphicOverlay<OcrGraphic> ocrGraphicOverlay, IOnGetResultListener iOnGetResultListener) {
+    OcrDetectorProcessor(GraphicOverlay<OcrGraphic> ocrGraphicOverlay, int left, int right, int top, int bottom, IOnGetResultListener iOnGetResultListener) {
         mGraphicOverlay = ocrGraphicOverlay;
         mIOnGetResultListener = iOnGetResultListener;
+        mLeft = left;
+        mRight = right;
+        mTop = top;
+        mBottom = bottom;
     }
 
     /**
@@ -50,6 +60,9 @@ public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
         for (int i = 0; i < items.size(); ++i) {
             TextBlock item = items.valueAt(i);
             String value = trim(item.getValue());
+            Log.d("TAG", "drawFrame: " + mRight);
+            Log.d("TAG", "drawFrame: " + mTop);
+            Log.d("TAG", "drawFrame: " + mBottom);
             if (value.length() == MAX_LENGTH && isNumeric(value)) {
                 OcrGraphic graphic = new OcrGraphic(mGraphicOverlay, item);
                 mGraphicOverlay.add(graphic);

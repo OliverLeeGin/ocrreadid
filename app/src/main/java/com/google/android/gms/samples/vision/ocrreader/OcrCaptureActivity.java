@@ -77,6 +77,10 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     // Helper objects for detecting taps and pinches.
     private ScaleGestureDetector scaleGestureDetector;
     private GestureDetector gestureDetector;
+    private int mLeft;
+    private int mRight;
+    private int mTop;
+    private int mBottom;
 
     /**
      * Initializes the UI and creates the detector pipeline.
@@ -121,11 +125,15 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                 width,
                 getResources().getDisplayMetrics());
 
-        int top = 3 * height / 8;
-        int bottom = 5 * height / 8;
+        mTop = 3 * height / 8;
+        mBottom = 5 * height / 8;
+        mRight = (int) widthF;
 
 
-        DrawFrameLayout drawFrameLayout = new DrawFrameLayout(this, 0, top, widthF, bottom);
+        DrawFrameLayout drawFrameLayout = new DrawFrameLayout(this, 0, mTop, mRight, mBottom);
+        Log.d("TAG", "drawFrame: " + mRight);
+        Log.d("TAG", "drawFrame: " + mTop);
+        Log.d("TAG", "drawFrame: " + mBottom);
         mPreview.addView(drawFrameLayout);
     }
 
@@ -186,7 +194,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         // is set to receive the text recognition results and display graphics for each text block
         // on screen.
         TextRecognizer textRecognizer = new TextRecognizer.Builder(context).build();
-        textRecognizer.setProcessor(new OcrDetectorProcessor(mGraphicOverlay, new OcrDetectorProcessor.IOnGetResultListener() {
+        textRecognizer.setProcessor(new OcrDetectorProcessor(mGraphicOverlay, 0, mRight, mTop, mBottom, new OcrDetectorProcessor.IOnGetResultListener() {
             @Override
             public void getResult() {
                 onGetResult();
