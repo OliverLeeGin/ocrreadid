@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Mar 13 09:22:34 ICT 2018
+#Tue Mar 13 16:00:21 ICT 2018
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_alert_dialog_button_bar_material.xml

@@ -28,9 +28,12 @@ import com.google.android.gms.vision.text.TextBlock;
 public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
 
     private GraphicOverlay<OcrGraphic> mGraphicOverlay;
+    private static final int MAX_LENGTH = 15;
+    private IOnGetResultListener mIOnGetResultListener;
 
-    OcrDetectorProcessor(GraphicOverlay<OcrGraphic> ocrGraphicOverlay) {
+    OcrDetectorProcessor(GraphicOverlay<OcrGraphic> ocrGraphicOverlay, IOnGetResultListener iOnGetResultListener) {
         mGraphicOverlay = ocrGraphicOverlay;
+        mIOnGetResultListener = iOnGetResultListener;
     }
 
     /**
@@ -46,9 +49,21 @@ public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
         SparseArray<TextBlock> items = detections.getDetectedItems();
         for (int i = 0; i < items.size(); ++i) {
             TextBlock item = items.valueAt(i);
-            OcrGraphic graphic = new OcrGraphic(mGraphicOverlay, item);
-            mGraphicOverlay.add(graphic);
+            String value = trim(item.getValue());
+            if (value.length() == MAX_LENGTH && isNumeric(value)) {
+                OcrGraphic graphic = new OcrGraphic(mGraphicOverlay, item);
+                mGraphicOverlay.add(graphic);
+                mIOnGetResultListener.getResult();
+            }
         }
+    }
+
+    private boolean isNumeric(String item) {
+        return item.matches("^[0-9]*$");
+    }
+
+    private String trim(String item) {
+        return item.replace(" ", "");
     }
 
     /**
@@ -57,5 +72,9 @@ public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
     @Override
     public void release() {
         mGraphicOverlay.clear();
+    }
+
+    public interface IOnGetResultListener {
+        void getResult();
     }
 }
