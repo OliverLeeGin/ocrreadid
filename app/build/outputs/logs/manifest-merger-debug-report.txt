@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:2:1-36:12
+ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:3:5-62
 		INJECTED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml
@@ -24,7 +24,7 @@ ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-
 	android:name
 		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:8:22-62
 application
-ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:10:5-34:19
+ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:10:5-35:19
 MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/tranglet./.android/build-cache/49f3c478e29de0a2848c89d4758b55c4202e2156/output/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-base:9.4.0] /Users/tranglet./.android/build-cache/7b2704dd683b9084c0fc01b04f8fbbb0567394c1/output/AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/tranglet./.android/build-cache/96700947c5cdab9d4aaee0c207064f4dc81e5637/output/AndroidManifest.xml:5:5-20
@@ -42,7 +42,7 @@ MERGED from [com.android.support:support-compat:24.2.0] /Users/tranglet./.androi
 	android:label
 		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:15:9-40
 	android:supportsRtl
-		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:16:9-37
+		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:16:9-35
 	android:hardwareAccelerated
 		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:13:9-43
 	android:fullBackupContent
@@ -52,7 +52,7 @@ MERGED from [com.android.support:support-compat:24.2.0] /Users/tranglet./.androi
 	android:icon
 		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:14:9-38
 	android:theme
-		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:17:9-47
+		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:17:9-59
 meta-data#com.google.android.gms.vision.DEPENDENCIES
 ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:18:9-20:35
 	android:value
@@ -76,11 +76,11 @@ ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-
 	android:name
 		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:28:27-74
 activity#com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity
-ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:32:9-33:41
+ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:32:9-34:41
 	android:label
-		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:33:13-38
+		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:34:13-38
 	android:name
-		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:32:19-100
+		ADDED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml:33:13-94
 uses-sdk
 INJECTED from /Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/tranglet./.android/build-cache/49f3c478e29de0a2848c89d4758b55c4202e2156/output/AndroidManifest.xml:4:5-42

@@ -28,9 +28,20 @@ import com.google.android.gms.vision.text.TextBlock;
 public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
 
     private GraphicOverlay<OcrGraphic> mGraphicOverlay;
+    private static final int MAX_LENGTH = 15;
+    private IOnGetResultListener mIOnGetResultListener;
+    private int mLeft;
+    private int mRight;
+    private int mTop;
+    private int mBottom;
 
-    OcrDetectorProcessor(GraphicOverlay<OcrGraphic> ocrGraphicOverlay) {
+    OcrDetectorProcessor(GraphicOverlay<OcrGraphic> ocrGraphicOverlay, int left, int right, int top, int bottom, IOnGetResultListener iOnGetResultListener) {
         mGraphicOverlay = ocrGraphicOverlay;
+        mIOnGetResultListener = iOnGetResultListener;
+        mLeft = left;
+        mRight = right;
+        mTop = top;
+        mBottom = bottom;
     }
 
     /**
@@ -46,9 +57,22 @@ public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
         SparseArray<TextBlock> items = detections.getDetectedItems();
         for (int i = 0; i < items.size(); ++i) {
             TextBlock item = items.valueAt(i);
-            OcrGraphic graphic = new OcrGraphic(mGraphicOverlay, item);
-            mGraphicOverlay.add(graphic);
+            String value = trim(item.getValue());
+            if (value.length() == MAX_LENGTH && isNumeric(value) && item.getBoundingBox().top >= mTop
+                    && item.getBoundingBox().bottom <= mBottom) {
+                OcrGraphic graphic = new OcrGraphic(mGraphicOverlay, item);
+                mGraphicOverlay.add(graphic);
+                mIOnGetResultListener.getResult();
+            }
         }
+    }
+
+    private boolean isNumeric(String item) {
+        return item.matches("^[0-9]*$");
+    }
+
+    private String trim(String item) {
+        return item.replace(" ", "");
     }
 
     /**
@@ -57,5 +81,9 @@ public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
     @Override
     public void release() {
         mGraphicOverlay.clear();
+    }
+
+    public interface IOnGetResultListener {
+        void getResult();
     }
 }
