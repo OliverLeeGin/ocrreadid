@@ -15,8 +15,6 @@
  */
 package com.google.android.gms.samples.vision.ocrreader;
 
-import android.graphics.Rect;
-import android.util.Log;
 import android.util.SparseArray;
 
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.GraphicOverlay;
@@ -60,10 +58,8 @@ public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
         for (int i = 0; i < items.size(); ++i) {
             TextBlock item = items.valueAt(i);
             String value = trim(item.getValue());
-            Log.d("TAG", "drawFrame: " + mRight);
-            Log.d("TAG", "drawFrame: " + mTop);
-            Log.d("TAG", "drawFrame: " + mBottom);
-            if (value.length() == MAX_LENGTH && isNumeric(value)) {
+            if (value.length() == MAX_LENGTH && isNumeric(value) && item.getBoundingBox().top >= mTop
+                    && item.getBoundingBox().bottom <= mBottom) {
                 OcrGraphic graphic = new OcrGraphic(mGraphicOverlay, item);
                 mGraphicOverlay.add(graphic);
                 mIOnGetResultListener.getResult();

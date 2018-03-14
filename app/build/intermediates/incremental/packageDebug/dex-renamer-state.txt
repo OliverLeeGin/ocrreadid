@@ -1,4 +1,4 @@
-#Tue Mar 13 17:13:07 ICT 2018
+#Wed Mar 14 09:41:07 ICT 2018
 base.0=/Users/tranglet./Downloads/android-vision-master 2/visionSamples/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_957996615c5ac7f33285eafdadd3e09681e79daa
 renamed.1=classes.dex
 renamed.0=classes2.dex
